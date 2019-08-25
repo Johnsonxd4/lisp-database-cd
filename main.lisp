@@ -29,6 +29,8 @@
   (if (not (y-or-n-p "Another: "))
     (return))))
 
-(load-db "dbstore.db")
-;;(add-cds)
-(save-db "dbstore.db")
+(defun save-db-file()
+  (save-db *dbstorename*))
+
+(defun load-db-file()
+  (load-db *dbstorename*))

@@ -1,4 +1,5 @@
 (defvar *db* nil)
+(defvar *dbstorename* "dbstore.db")
 
 (defun add-record(cd)
   (push cd *db*)
