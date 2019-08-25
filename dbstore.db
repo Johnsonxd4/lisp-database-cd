@@ -1,0 +1,2 @@
+
+((:|TITLE| "" :|ARTIST| "" :|RATING| 0. :|RIPPED| |COMMON-LISP|::|T|) (:|TITLE| "album loko" :|ARTIST| "teste" :|RATING| 10. :|RIPPED| |COMMON-LISP|::|T|) (:|TITLE| "And album" :|ARTIST| "Mozi" :|RATING| 5. :|RIPPED| |COMMON-LISP|::|T|) (:|TITLE| "testes" :|ARTIST| "tese" :|RATING| 0. :|RIPPED| |COMMON-LISP|::|T|) (:|TITLE| "teste" :|ARTIST| "teste" :|RATING| 2. :|RIPPED| |COMMON-LISP|::|T|)) 

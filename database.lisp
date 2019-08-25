@@ -20,3 +20,15 @@
    (with-standard-io-syntax
      (setf *db* (read in)))))
 
+(defun select (selector)
+  (remove-if-not selector *db*))
+
+(defun make-comparation-expr(field value)
+  `(equal (getf cd ,field) ,value))
+
+(defun make-comparation-list(fields)
+  (loop while fields
+	collecting (make-comparation-expr(pop fields)(pop fields))))
+
+(defmacro where(&rest clauses)
+  `#'(lambda(cd)(and ,@(make-comparation-list clauses))))

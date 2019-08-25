@@ -30,5 +30,5 @@
     (return))))
 
 (load-db "dbstore.db")
-(add-cds)
+;;(add-cds)
 (save-db "dbstore.db")
